@@ -1,0 +1,10 @@
+<h2>Proposta - Detalhes</h2>
+
+<div *ngIf="proposta">
+  <h3>{{ proposta.name }}</h3>
+  <h4>{{ proposta.price | currency }}</h4>
+  <p>{{ proposta.description }}</p>
+
+  <button (click)="adicionarCarrinho(proposta)">Comprar</button>
+
+</div>

@@ -1,0 +1,27 @@
+<h2>Propostas</h2>
+
+<div *ngFor="let proposta of propostas">
+  <h3>
+    <a [title]="proposta.name + ' details'" [routerLink]="['/proposta', proposta.id]">
+      {{ proposta.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="proposta.description">
+    {{ proposta.description }}
+  </p>
+
+  
+
+  <button (click)="share()">
+    Share
+  </button>
+
+  <app-proposta-alerta [proposta]="proposta" (notify)="onNotify()">
+  </app-proposta-alerta>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
