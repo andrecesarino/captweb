@@ -2,8 +2,8 @@
 
 <div *ngFor="let proposta of propostas">
   <h3>
-    <a [title]="proposta.name + ' details'" [routerLink]="['/proposta', proposta.id]">
-      {{ proposta.name }}
+    <a [title]="proposta.nome + ' details'" [routerLink]="['/propostas', proposta.id]">
+      {{ proposta.nome }}
     </a>
   </h3>
 
@@ -11,7 +11,9 @@
     {{ proposta.description }}
   </p>
 
-  
+  <p *ngIf="proposta.preco">
+    {{ proposta.preco | currency }}
+  </p>  
 
   <button (click)="share()">
     Share
