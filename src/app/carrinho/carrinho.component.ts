@@ -8,8 +8,8 @@ import { CarrinhoService } from '../carrinho.service';
 })
 export class CarrinhoComponent implements OnInit {
   
-  constructor() { }
-    private carrinhoService: CarrinhoService
+  constructor( private carrinhoService: CarrinhoService) { }
+   
 
   
   ngOnInit() {

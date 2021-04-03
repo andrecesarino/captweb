@@ -10,6 +10,7 @@ import { PropostaAlertaComponent } from './proposta-alerta/proposta-alerta.compo
 import { PropostaDetalhesComponent } from './proposta-detalhes/proposta-detalhes.component';
 import { CarrinhoService } from './carrinho.service';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { CadastroInvestidorComponent } from './cadastro-investidor/cadastro-investidor.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
     PropostaListaComponent,
     PropostaAlertaComponent,
     PropostaDetalhesComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    CadastroInvestidorComponent
   ],
   bootstrap: [
     AppComponent
