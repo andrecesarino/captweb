@@ -7,6 +7,15 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./cadastro-investidor.component.css']
 })
 export class CadastroInvestidorComponent implements OnInit {
+   ngOnInit() {
+  }
+
+  //items = this.getItems();
+  
+  checkoutForm = this.formBuilder.group({
+    nome: '',
+    endLogradouro: '',
+  });
 
   constructor(
 
@@ -14,7 +23,9 @@ export class CadastroInvestidorComponent implements OnInit {
 
   ) { }
 
-  ngOnInit() {
-  }
+  onSubmit(): void{
+
+    console.warn('Preenchimento submetido.',this.checkoutForm.value);
+  } 
 
 }
