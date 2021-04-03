@@ -7,12 +7,14 @@ import { CarrinhoService } from '../carrinho.service';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent implements OnInit {
-  propostas = this.carrinhoService.pegarPropostas();
-
+  
   constructor() { }
     private carrinhoService: CarrinhoService
-    
+
+  
   ngOnInit() {
   }
+
+  propostas = this.carrinhoService.pegarPropostas();
 
 }
