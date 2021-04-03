@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarrinhoService } from '../carrinho.service';
 
 @Component({
   selector: 'app-carrinho',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent implements OnInit {
+  propostas = this.carrinhoService.pegarPropostas();
 
   constructor() { }
-
+    private carrinhoService: CarrinhoService
+    
   ngOnInit() {
   }
 

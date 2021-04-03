@@ -6,18 +6,18 @@ import { Injectable } from '@angular/core';
 
 export class CarrinhoService {
 
-  items = [];
+  propostas = [];
 
   adicionarCarrinho(proposta) {
-    this.items.push(proposta);
+    this.propostas.push(proposta);
   }
 
-  pegarItems() {
-    return this.items;
+  pegarPropostas() {
+    return this.propostas;
   }
 
   limparCarrinho() {
-    this.items = [];
-    return this.items;
+    this.propostas = [];
+    return this.propostas;
   }
 }
