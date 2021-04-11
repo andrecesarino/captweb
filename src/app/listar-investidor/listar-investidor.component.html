@@ -1,0 +1,33 @@
+<p>
+  listar-investidor works!
+</p>
+
+<div *ngFor="let investidor of investidores">
+  <h3>
+    <p>{{ investidor.nome }}</p>
+    <p>{{ investidor.dataNasc }}</p>
+    <p>{{ investidor.rg }}</p>
+    <p>{{ investidor.cpf }}</p>
+    <p>{{ investidor.nacionalidade }}</p>
+    <p>{{ investidor.estCivil }}</p>
+  </h3>
+</div>
+
+<!--
+  id: 1,
+    nome: 'João da SIlva',
+    genero:'M',
+    dataNasc:19780607,
+    nacionalidade: 'Brasileiro',
+    naturalEstado: 'GO',
+    naturalCidade: 'Goiania',
+    rg: 12312312,
+    orgEmissorRg:'SSP',
+    cpf: 13526812004, 
+    estCivil: 'casado',
+    regBens: 'Comunhao Parcial',
+    endLogradouro: 'Rua das Acácias',
+    endNumLogradouro: 232,
+    endBairro: 'Central',
+    sobre: 'Investidor experiente, busco empresa promissora.'
+-->
