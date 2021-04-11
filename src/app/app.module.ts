@@ -12,7 +12,7 @@ import { CarrinhoService } from "./carrinho.service";
 import { CarrinhoComponent } from "./carrinho/carrinho.component";
 import { CadastroInvestidorComponent } from "./cadastro-investidor/cadastro-investidor.component";
 import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor.component";
-import { HomeComponent } from "./home/home.component";
+//import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   imports: [
