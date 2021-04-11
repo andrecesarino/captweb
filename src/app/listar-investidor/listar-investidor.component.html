@@ -1,15 +1,11 @@
-<p>
-  listar-investidor works!
-</p>
-
-<div *ngFor="let investidor of investidores">
+<div class="lista-investidores" *ngFor="let investidor of investidores">
   <h3>
-    <p>{{ investidor.nome }}</p>
-    <p>{{ investidor.dataNasc }}</p>
-    <p>{{ investidor.rg }}</p>
-    <p>{{ investidor.cpf }}</p>
-    <p>{{ investidor.nacionalidade }}</p>
-    <p>{{ investidor.estCivil }}</p>
+    <p>Nome: {{ investidor.nome }}</p>
+    <p>Data Nascimento: {{ investidor.dataNasc | date:'mediumDate' }}</p>
+    <p>RG: {{ investidor.rg }}</p>
+    <p>CPF: {{ investidor.cpf }}</p>
+    <p>Nacionalidade: {{ investidor.nacionalidade }}</p>
+    <p>Estado Civil: {{ investidor.estCivil }}</p>
   </h3>
 </div>
 
