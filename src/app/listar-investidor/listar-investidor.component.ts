@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { investidores } from '../investidores';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+
+import { investidores } from "../investidores";
 
 @Component({
-  selector: 'app-listar-investidor',
-  templateUrl: './listar-investidor.component.html',
-  styleUrls: ['./listar-investidor.component.css']
+  selector: "app-listar-investidor",
+  templateUrl: "./listar-investidor.component.html",
+  styleUrls: ["./listar-investidor.component.css"]
 })
-export class ListarInvestidorComponent implements OnInit {
-
+export class ListarInvestidorComponent {
   investidores = investidores;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
