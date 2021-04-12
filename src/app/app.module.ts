@@ -12,7 +12,7 @@ import { CarrinhoService } from "./carrinho.service";
 import { CarrinhoComponent } from "./carrinho/carrinho.component";
 import { CadastroInvestidorComponent } from "./cadastro-investidor/cadastro-investidor.component";
 import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor.component";
-//import { HomeComponent } from "./home/home.component";
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   imports: [
@@ -23,7 +23,8 @@ import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor
       { path: "propostas/:propostaId", component: PropostaDetalhesComponent },
       { path: "carrinho", component: CarrinhoComponent },
       { path: "listar-investidores", component: ListarInvestidorComponent },
-      { path: "cadastrar-investidores", component: CadastroInvestidorComponent }
+      { path: "cadastrar-investidores", component: CadastroInvestidorComponent },
+      { path: "home-teste", component: HomeComponent }
     ])
   ],
   declarations: [
@@ -34,7 +35,7 @@ import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor
     PropostaDetalhesComponent,
     CarrinhoComponent,
     CadastroInvestidorComponent,
-    //HomeComponent,
+    HomeComponent,
     ListarInvestidorComponent
   ],
   bootstrap: [AppComponent],
