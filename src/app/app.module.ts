@@ -22,7 +22,8 @@ import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor
       { path: "", component: PropostaListaComponent },
       { path: "propostas/:propostaId", component: PropostaDetalhesComponent },
       { path: "carrinho", component: CarrinhoComponent },
-      { path: "listar-investidores", component: ListarInvestidorComponent }
+      { path: "listar-investidores", component: ListarInvestidorComponent },
+      { path: "cadastrar-investidores", component: CadastroInvestidorComponent }
     ])
   ],
   declarations: [
@@ -33,7 +34,7 @@ import { ListarInvestidorComponent } from "./listar-investidor/listar-investidor
     PropostaDetalhesComponent,
     CarrinhoComponent,
     CadastroInvestidorComponent,
-    HomeComponent,
+    //HomeComponent,
     ListarInvestidorComponent
   ],
   bootstrap: [AppComponent],
